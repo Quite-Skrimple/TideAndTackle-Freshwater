@@ -1,20 +1,19 @@
 package net.quiteskrimple.ttfreshwater;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.resources.Identifier;
+import net.quiteskrimple.ttfreshwater.item.ModItems;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TTFreshwater implements ModInitializer {
 	public static final String MOD_ID = "tt-freshwater";
-
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		
+		ModItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
