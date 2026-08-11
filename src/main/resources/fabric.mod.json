@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "tt-freshwater",
+	"version": "${version}",
+	"name": "TT Freshwater",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"QuiteSkrimple"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "MIT-License",
+	"icon": "assets/tt-freshwater/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.quiteskrimple.ttfreshwater.TTFreshwater"
+		],
+		"fabric-datagen": [
+			"net.quiteskrimple.ttfreshwater.TTFreshwaterDataGenerator"
+		]
+	},
+	"mixins": [
+		"tt-freshwater.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
